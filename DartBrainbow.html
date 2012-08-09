@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BrainbowDart</title>
+    <style type="text/css">
+    	body {
+		  background-color: #F8F8F8;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 14px;
+		  font-weight: normal;
+		  line-height: 1.2em;
+		  margin: 15px;
+		}
+
+		p {
+		  color: #333;
+		}
+		
+		#container {
+		  width: 100%;
+		  height: 400px;
+		  position: relative;
+		  border: 1px solid #ccc;
+		  background-color: #fff;
+		}
+		
+		#text, #result {
+		  text-align: center;
+		  margin-top: 140px;
+		}
+		
+		#text {
+			font-size: 24pt;
+		}
+		
+		#form {
+			dispay:inline;
+			text-align:center;
+			margin:auto;
+		}
+		
+		#form input, #form button {
+			border:1px solid black;
+			font-size:24pt;
+		}
+		
+    	
+    </style>
+  </head>
+  <body>
+    <h1>BrainbowDart</h1>
+    
+    <div id="container">
+    	<form id="form">
+      		<input type="text" id="seq" />
+      		<button id="calc">Calculate</button>
+      	</form>
+      <p id="text"></p>
+      <p id="result"></p>
+    </div>
+
+    <script type="application/dart" src="DartBrainbow.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
